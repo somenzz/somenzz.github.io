@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>我的web开发小结（vue遇上drf ） | somenzz&#39;s blog</title>
+    <meta name="description" content="禅与计算机编程艺术，公众号：Python七号">
+    <meta name="generator" content="VuePress 1.3.1">
+    <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#42b983">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon" href="/icon_vuepress_reco.png">
+  <link rel="mask-icon" href="/icon_vuepress_reco.svg" color="#42b983">
+  <meta name="msapplication-TileImage" content="/icon_vuepress_reco.png">
+  <meta name="msapplication-TileColor" content="#000000">
+    <meta property="article:published_time" content="Fri Feb 07 2020 08:00:00 GMT+0800 (GMT+08:00)"><meta property="article:modified_time" content="Fri Sep 25 2020 00:35:15 GMT+0800 (GMT+08:00)"><meta property="og:site_name" content="somenzz&#39;s blog"><meta property="og:title" content="我的web开发小结（vue遇上drf ）"><meta property="og:type" content="website"><meta property="og:url" content="/views/python/vue_drf.html"><meta name="twitter:title" content="我的web开发小结（vue遇上drf ）"><meta name="twitter:url" content="/views/python/vue_drf.html"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:label1" content="Written by"><meta name="twitter:label2" content="Filed under"><meta name="twitter:data2" content="vue, django-rest-framework, nginx"><meta property="article:tag" content="vue"><meta property="article:tag" content="django-rest-framework"><meta property="article:tag" content="nginx">
+    <link rel="preload" href="/assets/css/0.styles.f5bbbaf3.css" as="style"><link rel="preload" href="/assets/js/app.7a842218.js" as="script"><link rel="preload" href="/assets/js/4.2209a07b.js" as="script"><link rel="preload" href="/assets/js/1.1b205fb2.js" as="script"><link rel="preload" href="/assets/js/25.9fd04029.js" as="script"><link rel="preload" href="/assets/js/11.c2ed9543.js" as="script"><link rel="prefetch" href="/assets/js/10.b9e0928e.js"><link rel="prefetch" href="/assets/js/12.f9c57eb2.js"><link rel="prefetch" href="/assets/js/13.bf5a4ecc.js"><link rel="prefetch" href="/assets/js/14.322dcad5.js"><link rel="prefetch" href="/assets/js/15.a7fd7eb2.js"><link rel="prefetch" href="/assets/js/16.fce91982.js"><link rel="prefetch" href="/assets/js/17.7c2796fd.js"><link rel="prefetch" href="/assets/js/18.6f869e4a.js"><link rel="prefetch" href="/assets/js/19.54cc0486.js"><link rel="prefetch" href="/assets/js/20.797bcff3.js"><link rel="prefetch" href="/assets/js/21.de46cd36.js"><link rel="prefetch" href="/assets/js/22.cff15ca1.js"><link rel="prefetch" href="/assets/js/23.1421a9e5.js"><link rel="prefetch" href="/assets/js/24.ef775d94.js"><link rel="prefetch" href="/assets/js/26.48712fbb.js"><link rel="prefetch" href="/assets/js/27.702c5fc0.js"><link rel="prefetch" href="/assets/js/28.66990449.js"><link rel="prefetch" href="/assets/js/29.989d4e25.js"><link rel="prefetch" href="/assets/js/30.bc52a2b5.js"><link rel="prefetch" href="/assets/js/31.9f92fc72.js"><link rel="prefetch" href="/assets/js/32.84f54a0e.js"><link rel="prefetch" href="/assets/js/33.e6fcb663.js"><link rel="prefetch" href="/assets/js/34.01a30287.js"><link rel="prefetch" href="/assets/js/35.31f7bb71.js"><link rel="prefetch" href="/assets/js/36.7c529dd1.js"><link rel="prefetch" href="/assets/js/37.489caf19.js"><link rel="prefetch" href="/assets/js/38.03c1bee8.js"><link rel="prefetch" href="/assets/js/39.18597831.js"><link rel="prefetch" href="/assets/js/40.2a8a9e0d.js"><link rel="prefetch" href="/assets/js/41.3e9c1893.js"><link rel="prefetch" href="/assets/js/42.e1273a14.js"><link rel="prefetch" href="/assets/js/43.d6c882d0.js"><link rel="prefetch" href="/assets/js/44.955bff4f.js"><link rel="prefetch" href="/assets/js/45.3be0fc58.js"><link rel="prefetch" href="/assets/js/46.42d82451.js"><link rel="prefetch" href="/assets/js/47.84f48795.js"><link rel="prefetch" href="/assets/js/48.bda54319.js"><link rel="prefetch" href="/assets/js/49.6ddf548c.js"><link rel="prefetch" href="/assets/js/5.418474b6.js"><link rel="prefetch" href="/assets/js/50.e1cd4d97.js"><link rel="prefetch" href="/assets/js/51.68aa3a1a.js"><link rel="prefetch" href="/assets/js/52.8d3a0308.js"><link rel="prefetch" href="/assets/js/53.3b422982.js"><link rel="prefetch" href="/assets/js/54.efaac134.js"><link rel="prefetch" href="/assets/js/6.608b4f85.js"><link rel="prefetch" href="/assets/js/7.7071d4b4.js"><link rel="prefetch" href="/assets/js/8.20bfb2ad.js"><link rel="prefetch" href="/assets/js/9.afbfc1fb.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.04e65345.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f5bbbaf3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container" data-v-319dd33c><div data-v-319dd33c><div id="loader-wrapper" class="loading-wrapper" data-v-4b73742e data-v-319dd33c data-v-319dd33c><div class="loader-main" data-v-4b73742e><div data-v-4b73742e></div><div data-v-4b73742e></div><div data-v-4b73742e></div><div data-v-4b73742e></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-1e2a0cc0 data-v-319dd33c data-v-319dd33c><h3 class="title" style="display:none;" data-v-1e2a0cc0 data-v-1e2a0cc0>somenzz's blog</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-1e2a0cc0 data-v-1e2a0cc0><input type="password" value="" data-v-1e2a0cc0> <span data-v-1e2a0cc0>Konck! Knock!</span> <button data-v-1e2a0cc0>OK</button></label> <div class="footer" style="display:none;" data-v-1e2a0cc0 data-v-1e2a0cc0><span data-v-1e2a0cc0><i class="iconfont reco-theme" data-v-1e2a0cc0></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-1e2a0cc0>vuePress-theme-reco</a></span> <span data-v-1e2a0cc0><i class="iconfont reco-copyright" data-v-1e2a0cc0></i> <a data-v-1e2a0cc0><span data-v-1e2a0cc0>somenzz</span>
+            
+          <span data-v-1e2a0cc0>2018 - </span>
+          2020
+        </a></span></div></div> <div class="hide" data-v-319dd33c><header class="navbar" data-v-319dd33c><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/favicon.jpg" alt="somenzz's blog" class="logo"> <span class="site-name">somenzz's blog</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/数据库/" class="nav-link"><i class="iconfont undefined"></i>
+  数据库
+</a></li><li class="dropdown-item"><!----> <a href="/categories/好课推荐/" class="nav-link"><i class="iconfont undefined"></i>
+  好课推荐
+</a></li><li class="dropdown-item"><!----> <a href="/categories/随笔/" class="nav-link"><i class="iconfont undefined"></i>
+  随笔
+</a></li><li class="dropdown-item"><!----> <a href="/categories/算法/" class="nav-link"><i class="iconfont undefined"></i>
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/categories/服务器/" class="nav-link"><i class="iconfont undefined"></i>
+  服务器
+</a></li><li class="dropdown-item"><!----> <a href="/categories/工具/" class="nav-link"><i class="iconfont undefined"></i>
+  工具
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Python/" class="nav-link"><i class="iconfont undefined"></i>
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端/" class="nav-link"><i class="iconfont undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/categories/信息安全/" class="nav-link"><i class="iconfont undefined"></i>
+  信息安全
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      联系我
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://www.zhihu.com/people/somenzz/activities" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-bokeyuan"></i>
+  知乎
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://github.com/somenzz" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://www.jianshu.com/u/94303315d3f7" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-jianshu"></i>
+  简书
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://me.csdn.net/blog/somenzz" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-csdn"></i>
+  CSDN
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="/views/python/python_seven.html" class="nav-link"><i class="iconfont reco-wechat"></i>
+  公众号-Python七号
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-319dd33c></div> <aside class="sidebar" data-v-319dd33c><div class="personal-info-wrapper" data-v-6c8ffc9c><!----> <h3 class="name" data-v-6c8ffc9c>
+    somenzz
+  </h3> <div class="num" data-v-6c8ffc9c><div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>39</h3> <h6 data-v-6c8ffc9c>文章</h6></div> <div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>37</h3> <h6 data-v-6c8ffc9c>标签</h6></div></div> <hr data-v-6c8ffc9c></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/数据库/" class="nav-link"><i class="iconfont undefined"></i>
+  数据库
+</a></li><li class="dropdown-item"><!----> <a href="/categories/好课推荐/" class="nav-link"><i class="iconfont undefined"></i>
+  好课推荐
+</a></li><li class="dropdown-item"><!----> <a href="/categories/随笔/" class="nav-link"><i class="iconfont undefined"></i>
+  随笔
+</a></li><li class="dropdown-item"><!----> <a href="/categories/算法/" class="nav-link"><i class="iconfont undefined"></i>
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/categories/服务器/" class="nav-link"><i class="iconfont undefined"></i>
+  服务器
+</a></li><li class="dropdown-item"><!----> <a href="/categories/工具/" class="nav-link"><i class="iconfont undefined"></i>
+  工具
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Python/" class="nav-link"><i class="iconfont undefined"></i>
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端/" class="nav-link"><i class="iconfont undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/categories/信息安全/" class="nav-link"><i class="iconfont undefined"></i>
+  信息安全
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      联系我
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://www.zhihu.com/people/somenzz/activities" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-bokeyuan"></i>
+  知乎
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://github.com/somenzz" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://www.jianshu.com/u/94303315d3f7" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-jianshu"></i>
+  简书
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://me.csdn.net/blog/somenzz" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-csdn"></i>
+  CSDN
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="/views/python/python_seven.html" class="nav-link"><i class="iconfont reco-wechat"></i>
+  公众号-Python七号
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>我的web开发小结（vue遇上drf ）</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/views/python/vue_drf.html#我是怎么入门-web-开发的？" class="sidebar-link">我是怎么入门 web 开发的？</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/python/vue_drf.html#web-开发有哪些需要加强学习的？" class="sidebar-link">web 开发有哪些需要加强学习的？</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/python/vue_drf.html#web-开发都踩过哪些坑？" class="sidebar-link">web 开发都踩过哪些坑？</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-1e2a0cc0 data-v-319dd33c><h3 class="title" style="display:none;" data-v-1e2a0cc0 data-v-1e2a0cc0>我的web开发小结（vue遇上drf ）</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-1e2a0cc0 data-v-1e2a0cc0><input type="password" value="" data-v-1e2a0cc0> <span data-v-1e2a0cc0>Konck! Knock!</span> <button data-v-1e2a0cc0>OK</button></label> <div class="footer" style="display:none;" data-v-1e2a0cc0 data-v-1e2a0cc0><span data-v-1e2a0cc0><i class="iconfont reco-theme" data-v-1e2a0cc0></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-1e2a0cc0>vuePress-theme-reco</a></span> <span data-v-1e2a0cc0><i class="iconfont reco-copyright" data-v-1e2a0cc0></i> <a data-v-1e2a0cc0><span data-v-1e2a0cc0>somenzz</span>
+            
+          <span data-v-1e2a0cc0>2018 - </span>
+          2020
+        </a></span></div></div> <div data-v-319dd33c><main class="page"><div class="page-title" style="display:none;"><h1>我的web开发小结（vue遇上drf ）</h1> <hr> <div data-v-484a899e><i class="iconfont reco-account" data-v-484a899e><span data-v-484a899e>somenzz</span></i> <i class="iconfont reco-date" data-v-484a899e><span data-v-484a899e>2020-02-07</span></i> <i class="iconfont reco-eye" data-v-484a899e><span id="/views/python/vue_drf.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-484a899e><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="iconfont reco-tag tags" data-v-484a899e><span class="tag-item" data-v-484a899e>
+      vue
+    </span><span class="tag-item" data-v-484a899e>
+      django-rest-framework
+    </span><span class="tag-item" data-v-484a899e>
+      nginx
+    </span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><p>一句话，多看官方英文文档，多学习基础知识，尽量使用英文关键词搜索，多使用 stackoverflow，多使用轮子。</p> <p>下面是自问自答环节。</p> <h2 id="我是怎么入门-web-开发的？"><a href="#我是怎么入门-web-开发的？" class="header-anchor">#</a> 我是怎么入门 web 开发的？</h2> <p>因为运维，我入门了 Python，因为运维涉及网站上的操作，我学会了爬虫，同时也接触了开源的调度工具 Airflow，由于它的前端是 Flask 写的，进而了解到 Python 的 web 框架 Flask，Django，对比了众多 web 框架，我喜欢 Django 的 MVC 设计风格，于是跟着追梦人物的博客（链接见文末），学习了 Django，并通过简单的 web 页面实现自己工作中需要的功能。这些功能确实提高了工作效率。小成就感建立。</p> <p>后面接触到 cmdb，于是从开源项目寻找到了到 open-cmdb（链接见文末），我被这个简洁又实用的前端界面给吸引了，于是看他是怎么实现的，它前端使用 vue，element-ui，后端使用 django，django-rest-framework，于是我又学习了 vue 和 django-rest-framework，当然，我还接触到 redis，elstatic-search，还有大名鼎鼎的 nginx。 每一个技术工具，都有值得深入研究的东西，我这里只是学习如何使用这些轮子，仅仅是使用，就已经让我大开眼界。当然学习不是一下子就学会的，而是通过很多 demo，代码，和实践练习中不断理解由浅入深。通过不断地遇到问题，解决问题，就是这样，我现在可以说我入门了 web 开发。</p> <h2 id="web-开发有哪些需要加强学习的？"><a href="#web-开发有哪些需要加强学习的？" class="header-anchor">#</a> web 开发有哪些需要加强学习的？</h2> <p>1、web 开发者需要先了解 http 协议，或者说要深入学习也不为过，这些知识无论从事技术的哪个方向，都用得着，是属于万变不离其宗的宗。</p> <p>2、学习基础知识 html，javascript，css。如果觉得这些太简单，无需要学习，我建议你看看 winter 老师在极客时间的专栏《重学前端》，大多数人的知识不成体系，没有从点到线到面，等到用时发现脑子一片空白，查资料，上网搜代码，遇到坑时，从大量的问答网站上找答案，浪费了太多的时间，假如时间能重来，我会系统地学习一遍 html，javascript，css，尤其是 css，为了弄好网页的布局，花费的时间比甚至比实现一个完整的页面还多，这都是因为基础知识太弱导致。</p> <p>3、有了基础知识后，再熟悉框架，如 Vue.js 。只所以要用框架，是为了提高开发效率。同样的，无论写哪一种代码，我们要有轮子意识，自己写代码也好，使用别人的轮子也好，尽量做到复用，软件的价值就在于复用，减少重复劳动。</p> <p>4、学习一些设计架构方面的知识，小的方便比如为什么需要请求和响应拦截器，为什么需要路由，大的方便比如为什么要前后端分离？ 为什么要微服务？为什么要做负载均衡？</p> <p>5、安全方面，前端的参数检查，权限控制仅仅是为了防止用户错误的输入或访问，稍微会使用浏览器的开发者工具的，都可以绕过，更别说爬虫，因此后端的权限管理，安全控制是必不可少的，缺少权限意识和安全控制，做出来的网站都是极不安全的。</p> <h2 id="web-开发都踩过哪些坑？"><a href="#web-开发都踩过哪些坑？" class="header-anchor">#</a> web 开发都踩过哪些坑？</h2> <p>这里主要说下 vue，django，django-rest-framework。</p> <p>1、前后端分离后在生产环境部署时静态资源无法访问。</p> <p>在开发环境中，前端使用 vue，后端使用 DRF(django rest framework)，前端端口 8080，后端端口 8000，在接口调试中我们需要将 8080/api/ 的请求转发到 8000/api/ 上，使用 vue 配置文件中设置代理服务器就可以轻松转发，访问 django 的静态资源也转发一下，配置信息大致是这样的：</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code>    devServer<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        compress<span class="token punctuation">:</span> true<span class="token punctuation">,</span>
+        disableHostCheck<span class="token punctuation">:</span> true<span class="token punctuation">,</span>
+        proxy<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token string">'/api'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                target<span class="token punctuation">:</span> <span class="token string">'http://127.0.0.1:8000'</span><span class="token punctuation">,</span>
+                changeOrigin<span class="token punctuation">:</span> true<span class="token punctuation">,</span>
+                pathRewrite<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                    <span class="token string">'^/api'</span><span class="token punctuation">:</span> <span class="token string">'/api'</span><span class="token punctuation">,</span><span class="token operator">//</span>重写<span class="token punctuation">,</span>                     
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+            <span class="token string">'/media'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                target<span class="token punctuation">:</span> <span class="token string">'http://127.0.0.1:8000'</span><span class="token punctuation">,</span>
+                changeOrigin<span class="token punctuation">:</span> true<span class="token punctuation">,</span>
+                pathRewrite<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                    <span class="token string">'^/media'</span><span class="token punctuation">:</span> <span class="token string">'/media'</span><span class="token punctuation">,</span><span class="token operator">//</span>重写<span class="token punctuation">,</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+ 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><p>部署在生产环境时，我们在 nginx 中设置同样的代理就行了，这并没毛病，但当你把 django 配置文件中的 DEBUG 设置为 FALSE 后，原来有 django 来驱动的静态不再由 django 来驱动了，需要 nginx 来接管。</p> <p>遇到此问题的朋友，可以参考我的做法：</p> <p>第一、先把所有的 static 文件，主要是 css 文件，js 文件，字体文件等收集到一起，vue 的静态文件就在 dist 目录，而 django 的静态文件需要执行以下命令先收集静态文件，主要是 django admin 后台用到的静态文件。</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code>python manage<span class="token punctuation">.</span>py collectstatic
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>这一步会把 django 用到的静态文件全部放在<code>STATIC_ROOT</code> 的路径，因此这个路径你可以设置成 vue 的 static 路径，这样收集后不用再手动复制到一起了。</p> <p>第二、通过 django 上传 media 文件也由 nginx 来驱动。</p> <p>以上两步在 nginx 的配置如下：</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code>        location <span class="token operator">/</span>media <span class="token punctuation">{</span>
+            autoindex on<span class="token punctuation">;</span>
+            alias E<span class="token punctuation">:</span><span class="token operator">/</span>gitee<span class="token operator">/</span>xxxxx<span class="token operator">/</span>rearEnd<span class="token operator">/</span>media<span class="token operator">/</span><span class="token punctuation">;</span> 
+        <span class="token punctuation">}</span>       
+
+        location <span class="token operator">/</span>static <span class="token punctuation">{</span>
+            autoindex on<span class="token punctuation">;</span>
+            alias E<span class="token punctuation">:</span>\gitee\xxxxx\frontEnd\dist\static<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>现在我们把静态文件都由 nginx 来返回给前端了，但这其实还不够，如果用到了 DRF 的 ModelViewSet ，那么返回的文件信息是一个绝对 url，比如 <code>http://127.0.0.1:8000/media/xx/xx.file</code>, 这在本机访问是没问题的，一旦通过 web 远程访问服务器，那么 <code>http://127.0.0.1:8000/media/xx/xx.file</code> 肯定是无法访问的，我们需要浏览器在发请求时替换为我们的域名，这一步通过在 nginx 配置文件中代理那块加上 <code>proxy_set_header Host $host;</code> 注意这里没有 port，因为是有域名访问。</p> <p>搞到半夜，最终效果比较满意的 nginx 的配置文件长这样（供参考）：</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code>listen       <span class="token number">8081</span><span class="token punctuation">;</span>
+        server_name  localhost<span class="token punctuation">;</span>
+        location <span class="token operator">/</span><span class="token punctuation">{</span>
+            root E<span class="token punctuation">:</span>\gitee\xxxxx\frontEnd\dist<span class="token punctuation">;</span>
+            index index<span class="token punctuation">.</span>html<span class="token punctuation">;</span>
+            try_files $uri $uri<span class="token operator">/</span> <span class="token operator">/</span>index<span class="token punctuation">.</span>html<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        location <span class="token operator">/</span>media <span class="token punctuation">{</span>
+            autoindex on<span class="token punctuation">;</span>
+            alias E<span class="token punctuation">:</span><span class="token operator">/</span>gitee<span class="token operator">/</span>xxxxx<span class="token operator">/</span>rearEnd<span class="token operator">/</span>media<span class="token operator">/</span><span class="token punctuation">;</span> 
+        <span class="token punctuation">}</span>       
+
+        location <span class="token operator">/</span>static <span class="token punctuation">{</span>
+            autoindex on<span class="token punctuation">;</span>
+            alias E<span class="token punctuation">:</span>\gitee\xxxxx\frontEnd\dist\static<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        location <span class="token operator">/</span>admin<span class="token operator">/</span> <span class="token punctuation">{</span>
+            proxy_pass http<span class="token punctuation">:</span><span class="token operator">//</span><span class="token number">127.0</span><span class="token number">.0</span><span class="token number">.1</span><span class="token punctuation">:</span><span class="token number">8000</span><span class="token operator">/</span>admin<span class="token operator">/</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        
+        location <span class="token operator">/</span>api<span class="token operator">/</span><span class="token punctuation">{</span>
+            proxy_pass http<span class="token punctuation">:</span><span class="token operator">//</span><span class="token number">127.0</span><span class="token number">.0</span><span class="token number">.1</span><span class="token punctuation">:</span><span class="token number">8000</span><span class="token operator">/</span>api<span class="token operator">/</span><span class="token punctuation">;</span>
+            proxy_set_header Host $host<span class="token punctuation">;</span>
+            <span class="token comment"># proxy_set_header Host $host:$server_port;</span>
+            proxy_set_header X<span class="token operator">-</span>Forwarded<span class="token operator">-</span>For $proxy_add_x_forwarded_for<span class="token punctuation">;</span> 
+        <span class="token punctuation">}</span>
+        
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br></div></div><p>2、chrome 浏览器一切正常，safari 浏览器对接口报 401 错误。</p> <p>这个问题坑了我很久，最终在 stackoverflow 上找到答案。</p> <p>因为你的接口的 url 中少了最后一个斜杠，&quot;/&quot;，这里鄙视一下 safari 浏览器的弱智。</p> <p>3、其他的都是小坑了，在 stackoverflow 基本上都可以找到答案，最好使用英文关键字检索。</p> <p>【相关链接】：
+[追梦人物](<a href="https://www.zmrenwu.com/" target="_blank" rel="noopener noreferrer">https://www.zmrenwu.com/<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="https://github.com/open-cmdb/cmdb" target="_blank" rel="noopener noreferrer">open-cmdb<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>
+(完)</p> <p>关注微信公众号：Python七号，像玩游戏一样学习 Python。</p> <p><img src="/assets/img/PythonSevenW.8dfd1dc6.jpg" alt=""></p></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">9/25/2020, 12:35:15 AM</span></div></footer> <!----></main> <!----> <div style="display:none;" data-v-319dd33c data-v-319dd33c><div class="comments-wrapper" data-v-319dd33c><div class="valine-wrapper"><div id="valine"></div></div></div></div></div></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-a81d141e data-v-a81d141e><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-a81d141e><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-a81d141e></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-a81d141e></path></svg></div><!----></div></div>
+    <script src="/assets/js/app.7a842218.js" defer></script><script src="/assets/js/4.2209a07b.js" defer></script><script src="/assets/js/1.1b205fb2.js" defer></script><script src="/assets/js/25.9fd04029.js" defer></script><script src="/assets/js/11.c2ed9543.js" defer></script>
+  </body>
+</html>
