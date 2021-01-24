@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "6e4e4786632ce650172f6ea94811e4b1"
+    "revision": "2acdeb8bcf97dfc4e9f6cca50aed0f68"
   },
   {
     "url": "assets/css/0.styles.f5bbbaf3.css",
@@ -270,12 +270,12 @@ self.__precacheManifest = [
     "revision": "c109df93bd5de05b6939cf61d78f9a88"
   },
   {
-    "url": "assets/js/40.9a2a72a8.js",
-    "revision": "e70b2bec591bc4e3791f833f738fbf78"
+    "url": "assets/js/40.abe8f4bb.js",
+    "revision": "10dd624b89862049c54252e2a11c15ec"
   },
   {
-    "url": "assets/js/41.0a687d18.js",
-    "revision": "ed5da8669bca2ecf6c1f7077b6311f37"
+    "url": "assets/js/41.d8d53a5e.js",
+    "revision": "8c6739e576fbc56a6be5cd55b3dc836f"
   },
   {
     "url": "assets/js/42.8e23baf1.js",
@@ -286,12 +286,12 @@ self.__precacheManifest = [
     "revision": "452444dda375d6f0afee5783cdb1031d"
   },
   {
-    "url": "assets/js/44.bc31ebc6.js",
-    "revision": "4ef7e257b3a5ded43d87c756ec2e2dff"
+    "url": "assets/js/44.0398177f.js",
+    "revision": "de54a30d2e3efd2b0d929339b20294c0"
   },
   {
-    "url": "assets/js/45.695a99ac.js",
-    "revision": "6258a3385c665a561489c356805e037b"
+    "url": "assets/js/45.677f1c23.js",
+    "revision": "5c41eb43e9119a05cd96f104982fa67d"
   },
   {
     "url": "assets/js/46.9395800f.js",
@@ -430,8 +430,8 @@ self.__precacheManifest = [
     "revision": "99db76dc0f85849dfba04bbebc1f0dad"
   },
   {
-    "url": "assets/js/app.79383426.js",
-    "revision": "a31d4fb7d09e6404d96c61c322e6e191"
+    "url": "assets/js/app.217d716c.js",
+    "revision": "1415b97702eb04b1199f09066b5aafd6"
   },
   {
     "url": "assets/js/vendors~flowchart.5391431f.js",
@@ -447,55 +447,55 @@ self.__precacheManifest = [
   },
   {
     "url": "categories/index.html",
-    "revision": "2d7c840689a3e8fde5f57f3e2422dee3"
+    "revision": "f681ac832af38e6a76bd3fbaf155d325"
   },
   {
     "url": "categories/Python/index.html",
-    "revision": "834db12cb190c5602cf0083f8af08787"
+    "revision": "368ab18304968026c24d3e8d916c151c"
   },
   {
     "url": "categories/Python/page/2/index.html",
-    "revision": "d1e9262125b9c40a43260ea3af16f064"
+    "revision": "b7d84988a8d02d85b196ac3ab6ed14bc"
   },
   {
     "url": "categories/Python/page/3/index.html",
-    "revision": "766e0dc2c606e83b48900daa2ad6b6c8"
+    "revision": "ea72cac2bca887af9d9b2c2bf6f4c7c1"
   },
   {
     "url": "categories/信息安全/index.html",
-    "revision": "a92bc6e458d9353e52e38b8a65843575"
+    "revision": "ff0e468969b2080cf714a9026da69fbf"
   },
   {
     "url": "categories/前端/index.html",
-    "revision": "732ea181d1abefd3b7675b33c82c3f5f"
+    "revision": "24a59b61a31333facd4a56ba820026bf"
   },
   {
     "url": "categories/好课推荐/index.html",
-    "revision": "00653f85ccbc234fb81efcc785f6dd2a"
+    "revision": "88a38bfeb82d79e14a4b4d3f7c332a8f"
   },
   {
     "url": "categories/工具/index.html",
-    "revision": "41a5034b0f3f5bce4045f8efbb0e6020"
+    "revision": "6fc32045877137500d44d14a0c501e0a"
   },
   {
     "url": "categories/数据库/index.html",
-    "revision": "920a62974db68534ddf473f541bbcf9d"
+    "revision": "23f0969bc337529b4adc842bb01c5e89"
   },
   {
     "url": "categories/服务器/index.html",
-    "revision": "79f0c800c4c4ceef157393a68212671a"
+    "revision": "caed14dec13668933b3b20d3b3ee774b"
   },
   {
     "url": "categories/电子书/index.html",
-    "revision": "fa63e27d37bc25bbfc039a5537a07b7e"
+    "revision": "73efdc40d4af64f3afa2a795a08275c2"
   },
   {
     "url": "categories/算法/index.html",
-    "revision": "23d5e5705feec4dff184d5c0216211f1"
+    "revision": "9ec634b874fd3ee6411577661990e258"
   },
   {
     "url": "categories/随笔/index.html",
-    "revision": "7c18594f6ff33dd3056cab0a1fc94769"
+    "revision": "afb658b076f1632dd3b9ab37dd484a23"
   },
   {
     "url": "favicon.jpg",
@@ -515,7 +515,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "7c2a78454885ca821ad68352e9753df6"
+    "revision": "2c8f54f6e5ae9f1ab2ab166ea6eb9921"
   },
   {
     "url": "profile.jpg",
@@ -527,451 +527,451 @@ self.__precacheManifest = [
   },
   {
     "url": "tag/index.html",
-    "revision": "5af0ed02bd30a413e026ab44f0219e2b"
+    "revision": "568b6037c153bea981b7135f98f8bcc7"
   },
   {
     "url": "tags/abstractmethod/index.html",
-    "revision": "75c9a3450f7e22a0acfb9fb724f8fe7d"
+    "revision": "c83210d5b5c9257d3fb9400e560399cc"
   },
   {
     "url": "tags/Async/index.html",
-    "revision": "e4c585b086773fe8555acf4185363db3"
+    "revision": "be377b7b3018613e28a7e3b14d4eedb7"
   },
   {
     "url": "tags/AWD/index.html",
-    "revision": "29755627e2347b40c1525bb9d04b4262"
+    "revision": "25dc258db76679b3de9b4424a7d6819c"
   },
   {
     "url": "tags/db2/index.html",
-    "revision": "b864c22583e60b2729a6aebea041f6de"
+    "revision": "4ef1b8fc841e9c46ce01e5b84fe13674"
   },
   {
     "url": "tags/django-rest-framework/index.html",
-    "revision": "6b3f54c8bc3d60b96301dd93f513e4cb"
+    "revision": "df3820b090097e0c154a9720c3336c4a"
   },
   {
     "url": "tags/Django/index.html",
-    "revision": "1399ee004dc3fc8dc311c873221d4c96"
+    "revision": "ab5cb342d39169a811529e7f068b19b5"
   },
   {
     "url": "tags/Docker/index.html",
-    "revision": "4eb28864988b97cb0c31b51947b213f4"
+    "revision": "7c790d8af8e4650012de7d98e0b2a603"
   },
   {
     "url": "tags/eval/index.html",
-    "revision": "5d204b0923ecbc0880c09653ecdbc048"
+    "revision": "91e9e5753caa6dc3cadcef7fa487cf2a"
   },
   {
     "url": "tags/fastapi/index.html",
-    "revision": "00ee7dfc62420e1d44b54d158a54d4e4"
+    "revision": "9e93a52536c9d51e471c22f7ad1d2cd2"
   },
   {
     "url": "tags/Github Actions/index.html",
-    "revision": "219d79170d378a0867507913a6641b9c"
+    "revision": "c1263c871908d49563967e48cb88cfea"
   },
   {
     "url": "tags/https/index.html",
-    "revision": "7d55444fba0b503242c325ada65bace3"
+    "revision": "dbe192587874a1ad251a343c8f480495"
   },
   {
     "url": "tags/iTerm2/index.html",
-    "revision": "b3abcd9b5fbdb116728eaee2339d01e1"
+    "revision": "8a1b3f967f87df8a661db17704011cb8"
   },
   {
     "url": "tags/Let's Encrypt/index.html",
-    "revision": "6912e7c137cd718dffb3a541343d174c"
+    "revision": "c288d1e55f93d137db91bf031ffe8026"
   },
   {
     "url": "tags/Mac App/index.html",
-    "revision": "62bc91e8628d8aeacfe5450a472f36ae"
+    "revision": "7509a32e9b21c727b9ece632396a63b9"
   },
   {
     "url": "tags/MacBookPro/index.html",
-    "revision": "3240967d021f3e923aba094b96a644f6"
+    "revision": "1a00dbad0dc79a20a796cfcd56751ae3"
   },
   {
     "url": "tags/metaclass/index.html",
-    "revision": "7ed6be3da5e34481e7885c7481fc5de8"
+    "revision": "73438e274e921eb7361fd3a074fdf1df"
   },
   {
     "url": "tags/nginx/index.html",
-    "revision": "dd5793d7fc5d8472d18e24173c04a3be"
+    "revision": "e198ed32db75a593d531dc33cf39f02d"
   },
   {
     "url": "tags/Python/index.html",
-    "revision": "a38342cfde947553b5609b3da8fa7719"
+    "revision": "c910ab6abc0a85f366e12bbdf60a6ed9"
   },
   {
     "url": "tags/Python更新/index.html",
-    "revision": "18ab514a2e78167de1af814fcd9c0ca3"
+    "revision": "a437b8c70697bf1d17fc8253d70a1c47"
   },
   {
     "url": "tags/Python编程/index.html",
-    "revision": "f1bf01dd99e5e289d59967819648943e"
+    "revision": "3bc2e2bc951fbee4af65b8a71ab1ace6"
   },
   {
     "url": "tags/RSA/index.html",
-    "revision": "39cca7194e06f594fa3455fe92737d3b"
+    "revision": "9447ec009604cf643622293237359e8a"
   },
   {
     "url": "tags/uvicorn/index.html",
-    "revision": "98ce893e5496e14468837f44cd85c300"
+    "revision": "13314aa98df871805f235946afbed21b"
   },
   {
     "url": "tags/vue/index.html",
-    "revision": "30d3658a7059223cf1c24bbcf31a7ce2"
+    "revision": "dbb606668a71a39e17da52d44c50eca2"
   },
   {
     "url": "tags/Web Scraper/index.html",
-    "revision": "9c72ab196c805345ae0c4fbe7df3da99"
+    "revision": "70a3e0e6f2546164423bad0f9a49af68"
   },
   {
     "url": "tags/webscoket/index.html",
-    "revision": "fa1e74f154f991d149ae92feed795b41"
+    "revision": "6250eadcf92b2541cff462beb7e4a631"
   },
   {
     "url": "tags/Web开发/index.html",
-    "revision": "3678c7b4004e94352d958cb44e024791"
+    "revision": "685278683715b7ebd7bd30d6e8eb1c2e"
   },
   {
     "url": "tags/最大公共子序列/index.html",
-    "revision": "c5163d75694131e43f6e0d4714f03fb5"
+    "revision": "9361a906bcc8c1ecf52a46683de0e2a4"
   },
   {
     "url": "tags/最小编辑距离/index.html",
-    "revision": "5d7c80d393b9eec9575ec3e6669d462a"
+    "revision": "a65e64f3a0d8e4f9a28d5be1be617793"
   },
   {
     "url": "tags/前端框架/index.html",
-    "revision": "42baf479aa38edc27468cb7fd0c52c18"
+    "revision": "96d870a81b42fdabff0a06e8106132b0"
   },
   {
     "url": "tags/单元测试/index.html",
-    "revision": "a91863e72f112408dd8ac3f079ccb042"
+    "revision": "13b38d189449673dafd4a38e70e582dc"
   },
   {
     "url": "tags/同时内外网/index.html",
-    "revision": "2bfe9f57f7bc7cedda1d6bec26592dc6"
+    "revision": "7bd505bf33443504636667f1bbc4edb8"
   },
   {
     "url": "tags/垃圾回收/index.html",
-    "revision": "e0e6367915a8a276f97011c031368a0a"
+    "revision": "19af6979d7896b2a9b8e8222e18a99b4"
   },
   {
     "url": "tags/实用技能/index.html",
-    "revision": "d5b9f01d85581285eddfbfa8b8c14042"
+    "revision": "07a5cf0190c1d540021c0e17826af1e8"
   },
   {
     "url": "tags/工具/index.html",
-    "revision": "ffdf27c950df17864f0cfbc1be58ae30"
+    "revision": "2371858503a67cb962e526b13f6de9a6"
   },
   {
     "url": "tags/左耳听风/index.html",
-    "revision": "a9a3bba285bce80177f32b3662f88f44"
+    "revision": "5ab7c2ada98d4ac9ba249d6a4b7317a2"
   },
   {
     "url": "tags/并发/index.html",
-    "revision": "a1c24ef8804728d2622c5976ab971b5a"
+    "revision": "91ab6f0899017b70de9563fb16008bb2"
   },
   {
     "url": "tags/异步/index.html",
-    "revision": "0cdffcd47bf2168d70b529f92cd239f5"
+    "revision": "3ece8c786a2fb2678e2a6947819f2029"
   },
   {
     "url": "tags/数据结构/index.html",
-    "revision": "a9fdefb0d35f0d4c996563c19cb973de"
+    "revision": "bb1ea80513dcdd711a30ea7c339e5928"
   },
   {
     "url": "tags/极客时间/index.html",
-    "revision": "de6843ad34b2e5bb633ecb4b08813316"
+    "revision": "9b3c53ca347711a42feb22b2a1056474"
   },
   {
     "url": "tags/比特币/index.html",
-    "revision": "8b158cf198e9e5685207bea48bf0b9d6"
+    "revision": "d652c88ed9d317334dd66ae18e91eff9"
   },
   {
     "url": "tags/渗透测试/index.html",
-    "revision": "e4ed9f3888b56bb4fc8f75006eba76be"
+    "revision": "0e5c9f6a39437068df3f35ff8db5e352"
   },
   {
     "url": "tags/游戏开发/index.html",
-    "revision": "ac6f331b367994ebbfe22cdf394dd669"
+    "revision": "40b0445b14246f510652a125d7616480"
   },
   {
     "url": "tags/爬虫/index.html",
-    "revision": "c910c334564889d878a906817ea922f9"
+    "revision": "177736cd8895c34e8f1f824b06ce98c9"
   },
   {
     "url": "tags/算法/index.html",
-    "revision": "3f4961ab338a3048d9405e6fc11e7ee6"
+    "revision": "cef9caeddcc90ec4230f2dcf58780083"
   },
   {
     "url": "tags/编程/index.html",
-    "revision": "36db80347965af876ef876ccc7ecb3ab"
+    "revision": "5364f86866d63634d791577a5e4d6207"
   },
   {
     "url": "tags/编程技巧/index.html",
-    "revision": "4a11732802ca7f186d79515875b438bd"
+    "revision": "592f3ef8c2ef5095fafc25ce6f571f8c"
   },
   {
     "url": "tags/设计模式/index.html",
-    "revision": "c904fb63e42e4468bdb91eea82720de3"
+    "revision": "3997a984fe55d18a59e76278a90298ba"
   },
   {
     "url": "tags/赚钱思维/index.html",
-    "revision": "a6235aa930b07c202c3ffa6db78a7f01"
+    "revision": "1b3c6e6cc3f094646086335ebef6e387"
   },
   {
     "url": "tags/随笔/index.html",
-    "revision": "10062973cf669b9d66789a7585b90abb"
+    "revision": "b007c15443be7d0f2245fadffc98e6aa"
   },
   {
     "url": "timeline/index.html",
-    "revision": "4947db94378765debeeaec67d88d2d6a"
+    "revision": "00a3e8daac09906dbb93b8e4e095dcb2"
   },
   {
     "url": "views/articles/2018/db2_locks.html",
-    "revision": "7768f28daa00b5e6b34ae93409effcb2"
+    "revision": "9724ee0e77c27eab46bc39bb95953536"
   },
   {
     "url": "views/articles/2018/db2_memory.html",
-    "revision": "52006f2ddf3b91ccce0cc62990b8d699"
+    "revision": "bcc2b92cdde219b818bf8721f46904b2"
   },
   {
     "url": "views/articles/2018/why_learn_algorithm.html",
-    "revision": "8c89e8387268bcdd1edc8827e6c25f04"
+    "revision": "5056b098f9e66b1b59d47cfdfafd4d02"
   },
   {
     "url": "views/articles/2019/the_road_of_technology.html",
-    "revision": "ee3af289261e5a4d67f4b52a94384eeb"
+    "revision": "a7560bda6e50fa277698c42dc4414f00"
   },
   {
     "url": "views/articles/2020/0320.html",
-    "revision": "0e94a1283a33411f68526cee85233409"
+    "revision": "10e13deb48ac8374e2e406f4f93120a5"
   },
   {
     "url": "views/articles/2020/0321.html",
-    "revision": "daaaa297ed137b7c4679495ade436418"
+    "revision": "1f5bdcc90c119b0debefd666655da4a1"
   },
   {
     "url": "views/articles/2020/0327.html",
-    "revision": "a824c5db15745cc5ffa7293d61ec54ef"
+    "revision": "539a629da1c56bc4536d09ddf09607b9"
   },
   {
     "url": "views/articles/2020/0331.html",
-    "revision": "caacd3d3de52781221cfa7954eef287a"
+    "revision": "6a0d8224508f3a2dde7888de5e93b078"
   },
   {
     "url": "views/articles/2020/0401.html",
-    "revision": "823e9209c8339c649145e419e354f6b2"
+    "revision": "332430a2199a2c290a46a78ed97f387e"
   },
   {
     "url": "views/articles/2020/0410.html",
-    "revision": "f3c121fc5820a6b5f86b558be5b4af11"
+    "revision": "5a1bd136891c2527cef17795b253d149"
   },
   {
     "url": "views/articles/2020/0415.html",
-    "revision": "10d24eefb24b8025db38266bea1d3f27"
+    "revision": "d9bf003b773f7160ba1756e8240c0c33"
   },
   {
     "url": "views/articles/2020/0424.html",
-    "revision": "cd0d64990b4f823aaf4c6bc17de15f67"
+    "revision": "564d08ce76399e9103d764bc43b3d236"
   },
   {
     "url": "views/articles/2020/0425.html",
-    "revision": "402753ea78236e10d30dda59c7504e93"
+    "revision": "7b9919eb00493f3403e725fb794a5dea"
   },
   {
     "url": "views/articles/2020/0507.html",
-    "revision": "4d9dcb9ce3dec334e30623cac19787be"
+    "revision": "d5c28f75ce58d8edb1ac7ceecc91c668"
   },
   {
     "url": "views/articles/2020/0512.html",
-    "revision": "b4a333e4eb8b3bd96123e813f4533de5"
+    "revision": "12aa340cf88fbb0749c2fdd91c86faef"
   },
   {
     "url": "views/articles/2020/0521.html",
-    "revision": "cf19ac8c30f28ce83392c17e5708d7c5"
+    "revision": "c1ce71d06a545cb57c0cd1604f8ebddc"
   },
   {
     "url": "views/articles/2020/0525.html",
-    "revision": "32979331f4e07b5f897fdc55143e159d"
+    "revision": "1ea815656a2e493f68f7194f15fd4f5c"
   },
   {
     "url": "views/articles/2020/0618.html",
-    "revision": "4cdcde7c919f97d9e925db9dc2198154"
+    "revision": "d072a3071ecce75f2057a931c588d102"
   },
   {
     "url": "views/articles/2020/0701.html",
-    "revision": "2f3fae729cae8ca26d16273a09898d21"
+    "revision": "bbcf8534bc1ea8127d93c60a8caf31f8"
   },
   {
     "url": "views/articles/2020/0709.html",
-    "revision": "73a6a013110faa10a9c3371925136d84"
+    "revision": "4f2b7776b6e0b7a2797504c81e4901ce"
   },
   {
     "url": "views/articles/2020/0723.html",
-    "revision": "3f462be2cc73f95e198dc2184ecf7f7e"
+    "revision": "0f30395a818f5c4d04efa97dc90da5b2"
   },
   {
     "url": "views/articles/2020/0724.html",
-    "revision": "12e0d1aef62b95d31ff047b200945079"
+    "revision": "342223348f7f5c65e8c0a3b33d3a0fdb"
   },
   {
     "url": "views/articles/2020/0812.html",
-    "revision": "18f17f8bf1fa316989b29ec12cc38496"
+    "revision": "ae06527854e85d3da69ef294417b14e6"
   },
   {
     "url": "views/articles/2020/0813.html",
-    "revision": "461efcae912b0ef2f7db60ddca15dc82"
+    "revision": "a0bced330f3ed555a6e9cdaed30ec532"
   },
   {
     "url": "views/articles/2020/0820.html",
-    "revision": "bf8be8e770adecc443923b7eee5c17d2"
+    "revision": "7da28cc2965032d6c86f9e5104205b58"
   },
   {
     "url": "views/articles/2020/0825.html",
-    "revision": "320b298fee82e1464b95e5269b1f566b"
+    "revision": "a23f3c7bc87b8579d1cab466e50c5fcc"
   },
   {
     "url": "views/articles/2020/0924.html",
-    "revision": "cf50e8c4d0355060e4bd3d958d16b971"
+    "revision": "fe73e3c85b3b363817553aff6b46fe57"
   },
   {
     "url": "views/articles/2020/0930.html",
-    "revision": "3cc4344d8d44a44ba1aae1b9618dc6f6"
+    "revision": "3be02af9267f394254064d66286841eb"
   },
   {
     "url": "views/articles/2020/1008.html",
-    "revision": "11cbf8b1f19476ada3adf29eadcb8c43"
+    "revision": "4bac3e7c72787db18572a8665fd71709"
   },
   {
     "url": "views/articles/2020/1016.html",
-    "revision": "e24e5c0fe5328bb6480d7ec0252b2ba5"
+    "revision": "9cbc2fb258415c2e77e26776aa90890a"
   },
   {
     "url": "views/articles/2020/1021.html",
-    "revision": "f786f72ca959478078f19db75f0616a5"
+    "revision": "73b202b3e937fbde803929ff84126cda"
   },
   {
     "url": "views/articles/2020/1030.html",
-    "revision": "7b48e1562cd2bc24b4b4d64dafa124d1"
+    "revision": "7931cc8e400ee2c6d31bfeada378b19b"
   },
   {
     "url": "views/articles/2020/1106.html",
-    "revision": "20435d7f7b7629500369da6a4377635e"
+    "revision": "b745ebd12244f84414a1e34e336ef790"
   },
   {
     "url": "views/articles/2020/15个Python游戏小项目.html",
-    "revision": "6554f88b6dc365aff1dd5ac52067997d"
+    "revision": "4378838df2ad303296738d48cbe485e9"
   },
   {
     "url": "views/articles/2020/2020原创整理.html",
-    "revision": "8496bcf385fa3324c034ac3f56d492b6"
+    "revision": "739f44c40261790c82614dc821537828"
   },
   {
     "url": "views/articles/2020/do-not-use-credit-card.html",
-    "revision": "2807a63b022cb741c3730e99dc9f1646"
+    "revision": "0df8b2b0a10d7f225058485580dddb38"
   },
   {
     "url": "views/articles/2020/first_penetration_test.html",
-    "revision": "b98c1bd2d39e91e951d04dbc4266df2b"
+    "revision": "1c25cdd86b279d2d430792c1639780b9"
   },
   {
     "url": "views/articles/2020/gui.html",
-    "revision": "385471429ad23fc9549dfeffc286cfe5"
+    "revision": "07aea311a4e7e1a36d6bde3062568cef"
   },
   {
     "url": "views/articles/2020/hypothesis.html",
-    "revision": "3d77b30f1078b5612bcfdeef8d2f4f39"
+    "revision": "7c0bb345e4260254042aa629e3b1c7ac"
   },
   {
     "url": "views/articles/2020/programer_make_money.html",
-    "revision": "f8dd20e676e653ddba9a33674bf23f4c"
+    "revision": "df6c74e07732b1c03f34a436b45f6cc4"
   },
   {
     "url": "views/articles/2020/Python_interesting_features.html",
-    "revision": "d0819d52fd422393f2f79b46c165f34b"
+    "revision": "ed9580943410ed06f9222479d6e61c86"
   },
   {
     "url": "views/articles/2020/Python3.10新特性.html",
-    "revision": "325264727207e4db3d874b9b2c13157e"
+    "revision": "21ff5a1035f1dcf4fb05fbd48e75502c"
   },
   {
     "url": "views/articles/2020/suppress.html",
-    "revision": "128d0fd53252ae622cb2686d79852fbd"
+    "revision": "b0a2266de0d94d01957fc41cedbecc0e"
   },
   {
     "url": "views/articles/2020/办公环境下如何同时访问内网网.html",
-    "revision": "02df65d7812351d09f3d785ccba80845"
+    "revision": "ee97e5eee383b5cfe7d77d590523b8f9"
   },
   {
     "url": "views/articles/2020/如何写出更具有Python风格的代码.html",
-    "revision": "b33a7b4df302cfd40802076108723d0a"
+    "revision": "18df37fd1511548b9eab26ab91e295e8"
   },
   {
     "url": "views/articles/2020/生财电子书.html",
-    "revision": "8b95403c1b72b35063a33ff10f2d6d87"
+    "revision": "540e20279c0f63ad67d72d4beddfe3a8"
   },
   {
     "url": "views/articles/2021/auto-deploy-blog.html",
-    "revision": "8e1abe8e1126aa5994327fd1bb1cc02a"
+    "revision": "12f96e73e372e73caf35d50fe377c15d"
   },
   {
     "url": "views/articles/2021/how-do-i-learn-python.html",
-    "revision": "28d2ce4cdd5b3304b1ee7d644eed8ea5"
+    "revision": "186a0690d944d6eacb47e78440012ca6"
   },
   {
     "url": "views/articles/2021/web-scraper.html",
-    "revision": "b3d67df8b85cefe14fccf908f860ca1e"
+    "revision": "de208788c548856d130677957726ee5e"
   },
   {
     "url": "views/articles/alwaysDoImportant.html",
-    "revision": "135b60476f2b77c22c55c9d26ac0a923"
+    "revision": "a3874d10ee6efc5f2f420053bea59bd0"
   },
   {
     "url": "views/index.html",
-    "revision": "0b8b707e9bb313f87a70873653901793"
+    "revision": "6796c28d7345c4916f8f3d0709ecd6b3"
   },
   {
     "url": "views/python/AsyncIO.html",
-    "revision": "10186b164282a6e7f8d839a78211b17a"
+    "revision": "161298ee11feeaf5aa07bfe567688324"
   },
   {
     "url": "views/python/check_idcard.html",
-    "revision": "d9dd526eb83157de9ff5be8c547b5d68"
+    "revision": "95c6bf0b5ba6bce2f4c0fa9e008a9072"
   },
   {
     "url": "views/python/concurrent_futures_vs_multiprocessing.html",
-    "revision": "0dff5ac04ebc1aa62c12ae893c44a5b9"
+    "revision": "270d5af19a219dd72273747b7abb35c3"
   },
   {
     "url": "views/python/memory_manage.html",
-    "revision": "16560e9cbc0a48063570f011ab187e4d"
+    "revision": "4ad13702427fdd7653fc4624f4d03e35"
   },
   {
     "url": "views/python/metaclass.html",
-    "revision": "280c725e57f2759945943a6110fa8ce5"
+    "revision": "ade3a41e62b09915522335287f68db43"
   },
   {
     "url": "views/python/python_abc.html",
-    "revision": "a166a666268784a50dd75defbee07020"
+    "revision": "c7009b4067e5d7101963114dc3fa4564"
   },
   {
     "url": "views/python/python_seven.html",
-    "revision": "394575e21634ec877f2be64ca397f7b3"
+    "revision": "0482e553c59755d6f32629bffbce2103"
   },
   {
     "url": "views/python/uvicorn.html",
-    "revision": "6f237973b1176ef9a64a3f636cb7f79c"
+    "revision": "228f4c74b083661d92a6eeec3278e903"
   },
   {
     "url": "views/python/vue_drf.html",
-    "revision": "19716cf799b96abc538b250c66a0e247"
+    "revision": "68f361aeee8d20426b98242e8fa802b3"
   },
   {
     "url": "views/python/what_inspire_FastApi.html",
-    "revision": "59894613c13159f42f1c6c28b4806cb0"
+    "revision": "e9040984357587ebea267131a9e684d8"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
