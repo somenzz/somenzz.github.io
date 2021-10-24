@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>使用 Python 创建交互式的 Web app 从未如此简单 | somenzz&#39;s blog</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icon_vuepress_reco.png">
+    <link rel="mask-icon" href="/icon_vuepress_reco.svg" color="#42b983">
+    <meta name="description" content="今天分享一个让开发交互式 Web app 超级简单的工具。">
+    <meta name="image" content="https://tva1.sinaimg.cn/large/008i3skNgy1gvj0jh6zx1g61h80cywlm02.gif">
+    <meta name="twitter:title" content="使用 Python 创建交互式的 Web app 从未如此简单">
+    <meta name="twitter:description" content="今天分享一个让开发交互式 Web app 超级简单的工具。">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://tva1.sinaimg.cn/large/008i3skNgy1gvj0jh6zx1g61h80cywlm02.gif">
+    <meta name="twitter:url" content="https://somenzz.github.io/blog/2021/10/use-python-write-interactive-web-app-so-easy.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="使用 Python 创建交互式的 Web app 从未如此简单">
+    <meta property="og:description" content="今天分享一个让开发交互式 Web app 超级简单的工具。">
+    <meta property="og:image" content="https://tva1.sinaimg.cn/large/008i3skNgy1gvj0jh6zx1g61h80cywlm02.gif">
+    <meta property="og:url" content="https://somenzz.github.io/blog/2021/10/use-python-write-interactive-web-app-so-easy.html">
+    <meta property="og:site_name" content="somenzz">
+    <meta property="article:published_time" content="2021-10-18T22:00:00.000Z">
+    <meta property="article:tag" content="Web开发">
+    <meta itemprop="name" content="使用 Python 创建交互式的 Web app 从未如此简单">
+    <meta itemprop="description" content="今天分享一个让开发交互式 Web app 超级简单的工具。">
+    <meta itemprop="image" content="https://tva1.sinaimg.cn/large/008i3skNgy1gvj0jh6zx1g61h80cywlm02.gif">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="theme-color" content="#42b983">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icon_vuepress_reco.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.83703952.css" as="style"><link rel="preload" href="/assets/js/app.73332f3e.js" as="script"><link rel="preload" href="/assets/js/3.86c9f58d.js" as="script"><link rel="preload" href="/assets/js/1.b9cce472.js" as="script"><link rel="preload" href="/assets/js/11.2681c4c5.js" as="script"><link rel="prefetch" href="/assets/js/10.9ccf9cf8.js"><link rel="prefetch" href="/assets/js/100.054cce49.js"><link rel="prefetch" href="/assets/js/101.49a93674.js"><link rel="prefetch" href="/assets/js/102.d426774f.js"><link rel="prefetch" href="/assets/js/103.65393f6f.js"><link rel="prefetch" href="/assets/js/104.70c21cf2.js"><link rel="prefetch" href="/assets/js/105.824b5f84.js"><link rel="prefetch" href="/assets/js/106.6cf25c18.js"><link rel="prefetch" href="/assets/js/107.71534ee8.js"><link rel="prefetch" href="/assets/js/108.f722c88e.js"><link rel="prefetch" href="/assets/js/109.83c9ca2d.js"><link rel="prefetch" href="/assets/js/110.8b02754a.js"><link rel="prefetch" href="/assets/js/111.46b7ccd1.js"><link rel="prefetch" href="/assets/js/112.c30a152c.js"><link rel="prefetch" href="/assets/js/113.07a46400.js"><link rel="prefetch" href="/assets/js/114.95bfddbc.js"><link rel="prefetch" href="/assets/js/115.966308e8.js"><link rel="prefetch" href="/assets/js/116.aec0a301.js"><link rel="prefetch" href="/assets/js/117.8f98727a.js"><link rel="prefetch" href="/assets/js/118.3bec4e9a.js"><link rel="prefetch" href="/assets/js/119.55cc2253.js"><link rel="prefetch" href="/assets/js/12.ca7c7256.js"><link rel="prefetch" href="/assets/js/120.4541f4b9.js"><link rel="prefetch" href="/assets/js/121.978bfff6.js"><link rel="prefetch" href="/assets/js/122.1ea7d5ed.js"><link rel="prefetch" href="/assets/js/123.c87e0fe5.js"><link rel="prefetch" href="/assets/js/124.6d654f7e.js"><link rel="prefetch" href="/assets/js/125.1d3c1dd5.js"><link rel="prefetch" href="/assets/js/126.cf5b7a66.js"><link rel="prefetch" href="/assets/js/127.18f7fbb9.js"><link rel="prefetch" href="/assets/js/128.5772242f.js"><link rel="prefetch" href="/assets/js/129.8a2d4565.js"><link rel="prefetch" href="/assets/js/13.0641bca8.js"><link rel="prefetch" href="/assets/js/130.f45f48ba.js"><link rel="prefetch" href="/assets/js/131.eae4e685.js"><link rel="prefetch" href="/assets/js/132.49fd82b9.js"><link rel="prefetch" href="/assets/js/133.d3d3371f.js"><link rel="prefetch" href="/assets/js/134.2526a1a5.js"><link rel="prefetch" href="/assets/js/135.5d3a1b98.js"><link rel="prefetch" href="/assets/js/136.018dc641.js"><link rel="prefetch" href="/assets/js/137.2867dcbc.js"><link rel="prefetch" href="/assets/js/138.3b5ac315.js"><link rel="prefetch" href="/assets/js/139.fd3882ec.js"><link rel="prefetch" href="/assets/js/14.7547a95d.js"><link rel="prefetch" href="/assets/js/140.ee13d1ba.js"><link rel="prefetch" href="/assets/js/141.7376cfab.js"><link rel="prefetch" href="/assets/js/142.94b5b1a0.js"><link rel="prefetch" href="/assets/js/143.9620ed0f.js"><link rel="prefetch" href="/assets/js/144.cf9af090.js"><link rel="prefetch" href="/assets/js/145.0eda394b.js"><link rel="prefetch" href="/assets/js/146.744721b4.js"><link rel="prefetch" href="/assets/js/147.ac1b38cb.js"><link rel="prefetch" href="/assets/js/148.2652b2f2.js"><link rel="prefetch" href="/assets/js/149.d88ec044.js"><link rel="prefetch" href="/assets/js/15.44f9a2da.js"><link rel="prefetch" href="/assets/js/150.9f370637.js"><link rel="prefetch" href="/assets/js/151.be97b001.js"><link rel="prefetch" href="/assets/js/152.5900aca3.js"><link rel="prefetch" href="/assets/js/153.b0249af7.js"><link rel="prefetch" href="/assets/js/154.c4afc13b.js"><link rel="prefetch" href="/assets/js/155.2394d2e8.js"><link rel="prefetch" href="/assets/js/156.11a9603d.js"><link rel="prefetch" href="/assets/js/157.ff90a8e4.js"><link rel="prefetch" href="/assets/js/158.c9e1fb2e.js"><link rel="prefetch" href="/assets/js/159.10ff9e97.js"><link rel="prefetch" href="/assets/js/16.8d827315.js"><link rel="prefetch" href="/assets/js/160.6e4f0ef6.js"><link rel="prefetch" href="/assets/js/161.a5a08733.js"><link rel="prefetch" href="/assets/js/162.368212df.js"><link rel="prefetch" href="/assets/js/163.9d34a307.js"><link rel="prefetch" href="/assets/js/164.571b1356.js"><link rel="prefetch" href="/assets/js/165.651c79fd.js"><link rel="prefetch" href="/assets/js/166.62ae3590.js"><link rel="prefetch" href="/assets/js/167.a7c210a0.js"><link rel="prefetch" href="/assets/js/168.2476667c.js"><link rel="prefetch" href="/assets/js/169.90145e64.js"><link rel="prefetch" href="/assets/js/17.fb35a53a.js"><link rel="prefetch" href="/assets/js/170.60d68b9e.js"><link rel="prefetch" href="/assets/js/171.a4788b69.js"><link rel="prefetch" href="/assets/js/172.81757c89.js"><link rel="prefetch" href="/assets/js/173.f2574307.js"><link rel="prefetch" href="/assets/js/174.0fc6eafb.js"><link rel="prefetch" href="/assets/js/175.c1b9c9ca.js"><link rel="prefetch" href="/assets/js/176.e20ec09d.js"><link rel="prefetch" href="/assets/js/177.1d061934.js"><link rel="prefetch" href="/assets/js/178.0f3f69f3.js"><link rel="prefetch" href="/assets/js/179.85bd0479.js"><link rel="prefetch" href="/assets/js/18.e2102d8b.js"><link rel="prefetch" href="/assets/js/180.718e4c95.js"><link rel="prefetch" href="/assets/js/181.f934d8c7.js"><link rel="prefetch" href="/assets/js/182.bc72573a.js"><link rel="prefetch" href="/assets/js/183.e29155fd.js"><link rel="prefetch" href="/assets/js/184.d413f0a4.js"><link rel="prefetch" href="/assets/js/19.c51f2384.js"><link rel="prefetch" href="/assets/js/20.cfac6285.js"><link rel="prefetch" href="/assets/js/21.7ee666bd.js"><link rel="prefetch" href="/assets/js/22.3b3bbcc7.js"><link rel="prefetch" href="/assets/js/23.db8234d1.js"><link rel="prefetch" href="/assets/js/24.a63ac26f.js"><link rel="prefetch" href="/assets/js/25.844a1760.js"><link rel="prefetch" href="/assets/js/26.07c6376e.js"><link rel="prefetch" href="/assets/js/27.1a337d62.js"><link rel="prefetch" href="/assets/js/28.1a9ebe2b.js"><link rel="prefetch" href="/assets/js/29.4e5ca6ec.js"><link rel="prefetch" href="/assets/js/30.26fc64bc.js"><link rel="prefetch" href="/assets/js/31.abe1ac2a.js"><link rel="prefetch" href="/assets/js/32.98de5652.js"><link rel="prefetch" href="/assets/js/33.d060cd26.js"><link rel="prefetch" href="/assets/js/34.16c8ad9e.js"><link rel="prefetch" href="/assets/js/35.74b9bb40.js"><link rel="prefetch" href="/assets/js/36.087db3a9.js"><link rel="prefetch" href="/assets/js/37.a6566a8f.js"><link rel="prefetch" href="/assets/js/38.39abd677.js"><link rel="prefetch" href="/assets/js/39.0a524100.js"><link rel="prefetch" href="/assets/js/4.e865e92d.js"><link rel="prefetch" href="/assets/js/40.1aa9e3e1.js"><link rel="prefetch" href="/assets/js/41.d0fb4940.js"><link rel="prefetch" href="/assets/js/42.3ff4e9b4.js"><link rel="prefetch" href="/assets/js/43.14acd35d.js"><link rel="prefetch" href="/assets/js/44.4b43a389.js"><link rel="prefetch" href="/assets/js/45.a7b35a1d.js"><link rel="prefetch" href="/assets/js/46.d18b6c77.js"><link rel="prefetch" href="/assets/js/47.4984abf8.js"><link rel="prefetch" href="/assets/js/48.164c798d.js"><link rel="prefetch" href="/assets/js/49.140302f4.js"><link rel="prefetch" href="/assets/js/5.70d0120f.js"><link rel="prefetch" href="/assets/js/50.70421577.js"><link rel="prefetch" href="/assets/js/51.3ef0131a.js"><link rel="prefetch" href="/assets/js/52.23365575.js"><link rel="prefetch" href="/assets/js/53.b7c205e2.js"><link rel="prefetch" href="/assets/js/54.496ab0ca.js"><link rel="prefetch" href="/assets/js/55.3cf69339.js"><link rel="prefetch" href="/assets/js/56.736d9988.js"><link rel="prefetch" href="/assets/js/57.52a924bb.js"><link rel="prefetch" href="/assets/js/58.697cd8f6.js"><link rel="prefetch" href="/assets/js/59.b103636a.js"><link rel="prefetch" href="/assets/js/6.ff40b78b.js"><link rel="prefetch" href="/assets/js/60.dfe1f2a0.js"><link rel="prefetch" href="/assets/js/61.11e397a5.js"><link rel="prefetch" href="/assets/js/62.9e5ede06.js"><link rel="prefetch" href="/assets/js/63.a46ae6b0.js"><link rel="prefetch" href="/assets/js/64.9583b20f.js"><link rel="prefetch" href="/assets/js/65.9c9c65da.js"><link rel="prefetch" href="/assets/js/66.6ba70820.js"><link rel="prefetch" href="/assets/js/67.337740c7.js"><link rel="prefetch" href="/assets/js/68.03ddc789.js"><link rel="prefetch" href="/assets/js/69.b21f0174.js"><link rel="prefetch" href="/assets/js/7.56b2a46c.js"><link rel="prefetch" href="/assets/js/70.de82522c.js"><link rel="prefetch" href="/assets/js/71.169e4dcd.js"><link rel="prefetch" href="/assets/js/72.7189c5f8.js"><link rel="prefetch" href="/assets/js/73.188e4cbc.js"><link rel="prefetch" href="/assets/js/74.53ec8b75.js"><link rel="prefetch" href="/assets/js/75.40f5e4d6.js"><link rel="prefetch" href="/assets/js/76.bad39839.js"><link rel="prefetch" href="/assets/js/77.d78344a9.js"><link rel="prefetch" href="/assets/js/78.db17c2a6.js"><link rel="prefetch" href="/assets/js/79.c249348c.js"><link rel="prefetch" href="/assets/js/8.b5b45055.js"><link rel="prefetch" href="/assets/js/80.c246d8ac.js"><link rel="prefetch" href="/assets/js/81.160c343f.js"><link rel="prefetch" href="/assets/js/82.11596df3.js"><link rel="prefetch" href="/assets/js/83.b571af31.js"><link rel="prefetch" href="/assets/js/84.0a4691cb.js"><link rel="prefetch" href="/assets/js/85.ff85f80f.js"><link rel="prefetch" href="/assets/js/86.83ad0317.js"><link rel="prefetch" href="/assets/js/87.7b1f29da.js"><link rel="prefetch" href="/assets/js/88.b2c686b4.js"><link rel="prefetch" href="/assets/js/89.6180054f.js"><link rel="prefetch" href="/assets/js/9.2fe3b6f2.js"><link rel="prefetch" href="/assets/js/90.5820ade0.js"><link rel="prefetch" href="/assets/js/91.1b52f398.js"><link rel="prefetch" href="/assets/js/92.cffb2ca1.js"><link rel="prefetch" href="/assets/js/93.50b8841e.js"><link rel="prefetch" href="/assets/js/94.1cc1c372.js"><link rel="prefetch" href="/assets/js/95.1972d714.js"><link rel="prefetch" href="/assets/js/96.8f4b96e4.js"><link rel="prefetch" href="/assets/js/97.abaf86d3.js"><link rel="prefetch" href="/assets/js/98.7fc4120e.js"><link rel="prefetch" href="/assets/js/99.b7d002b5.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.83703952.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-ed7af0ae><div data-v-ed7af0ae><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-ed7af0ae data-v-ed7af0ae><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-faa80d68 data-v-ed7af0ae data-v-ed7af0ae><h3 class="title" style="display:none;" data-v-faa80d68 data-v-faa80d68>somenzz's blog</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-faa80d68 data-v-faa80d68><input type="password" value="" data-v-faa80d68> <span data-v-faa80d68>Konck! Knock!</span> <button data-v-faa80d68>OK</button></label> <div class="footer" style="display:none;" data-v-faa80d68 data-v-faa80d68><span data-v-faa80d68><i class="iconfont reco-theme" data-v-faa80d68></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-faa80d68>vuePress-theme-reco</a></span> <span data-v-faa80d68><i class="iconfont reco-copyright" data-v-faa80d68></i> <a data-v-faa80d68><span data-v-faa80d68>somenzz</span>
+            
+          <span data-v-faa80d68>2018 - </span>
+          2021
+        </a></span></div></div> <div class="hide" data-v-ed7af0ae><header class="navbar" data-v-ed7af0ae><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/favicon.jpg" alt="somenzz's blog" class="logo"> <span class="site-name">somenzz's blog</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/服务器/" class="nav-link"><i></i>
+  服务器
+</a></li><li class="dropdown-item"><!----> <a href="/categories/编程/" class="nav-link"><i></i>
+  编程
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Python/" class="nav-link"><i></i>
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/categories/学习资源/" class="nav-link"><i></i>
+  学习资源
+</a></li><li class="dropdown-item"><!----> <a href="/categories/随笔/" class="nav-link"><i></i>
+  随笔
+</a></li><li class="dropdown-item"><!----> <a href="/categories/算法/" class="nav-link"><i></i>
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/categories/工具/" class="nav-link"><i></i>
+  工具
+</a></li><li class="dropdown-item"><!----> <a href="/categories/设计模式/" class="nav-link"><i></i>
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网络/" class="nav-link"><i></i>
+  网络
+</a></li><li class="dropdown-item"><!----> <a href="/categories/电影/" class="nav-link"><i></i>
+  电影
+</a></li><li class="dropdown-item"><!----> <a href="/categories/信息安全/" class="nav-link"><i></i>
+  信息安全
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端/" class="nav-link"><i></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据库/" class="nav-link"><i></i>
+  数据库
+</a></li><li class="dropdown-item"><!----> <a href="/categories/电子书/" class="nav-link"><i></i>
+  电子书
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://www.zhihu.com/people/zhengzhengshu/activities" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-bokeyuan"></i>
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/somenzz" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.jianshu.com/u/94303315d3f7" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-jianshu"></i>
+  简书
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://me.csdn.net/blog/somenzz" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-csdn"></i>
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="/views/python/python_seven.html" class="nav-link"><i class="iconfont reco-wechat"></i>
+  公众号-Python七号
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-ed7af0ae></div> <aside class="sidebar" data-v-ed7af0ae><div class="personal-info-wrapper" data-v-1f4c79ea data-v-ed7af0ae><img src="/profile.png" alt="author-avatar" class="personal-img" data-v-1f4c79ea> <h3 class="name" data-v-1f4c79ea>
+    somenzz
+  </h3> <div class="num" data-v-1f4c79ea><div data-v-1f4c79ea><h3 data-v-1f4c79ea>162</h3> <h6 data-v-1f4c79ea>Article</h6></div> <div data-v-1f4c79ea><h3 data-v-1f4c79ea>98</h3> <h6 data-v-1f4c79ea>Tag</h6></div></div> <ul class="social-links" data-v-1f4c79ea></ul> <hr data-v-1f4c79ea></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/服务器/" class="nav-link"><i></i>
+  服务器
+</a></li><li class="dropdown-item"><!----> <a href="/categories/编程/" class="nav-link"><i></i>
+  编程
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Python/" class="nav-link"><i></i>
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/categories/学习资源/" class="nav-link"><i></i>
+  学习资源
+</a></li><li class="dropdown-item"><!----> <a href="/categories/随笔/" class="nav-link"><i></i>
+  随笔
+</a></li><li class="dropdown-item"><!----> <a href="/categories/算法/" class="nav-link"><i></i>
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/categories/工具/" class="nav-link"><i></i>
+  工具
+</a></li><li class="dropdown-item"><!----> <a href="/categories/设计模式/" class="nav-link"><i></i>
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网络/" class="nav-link"><i></i>
+  网络
+</a></li><li class="dropdown-item"><!----> <a href="/categories/电影/" class="nav-link"><i></i>
+  电影
+</a></li><li class="dropdown-item"><!----> <a href="/categories/信息安全/" class="nav-link"><i></i>
+  信息安全
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端/" class="nav-link"><i></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据库/" class="nav-link"><i></i>
+  数据库
+</a></li><li class="dropdown-item"><!----> <a href="/categories/电子书/" class="nav-link"><i></i>
+  电子书
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://www.zhihu.com/people/zhengzhengshu/activities" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-bokeyuan"></i>
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/somenzz" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.jianshu.com/u/94303315d3f7" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-jianshu"></i>
+  简书
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://me.csdn.net/blog/somenzz" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-csdn"></i>
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="/views/python/python_seven.html" class="nav-link"><i class="iconfont reco-wechat"></i>
+  公众号-Python七号
+</a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-faa80d68 data-v-ed7af0ae><h3 class="title" style="display:none;" data-v-faa80d68 data-v-faa80d68>使用 Python 创建交互式的 Web app 从未如此简单</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-faa80d68 data-v-faa80d68><input type="password" value="" data-v-faa80d68> <span data-v-faa80d68>Konck! Knock!</span> <button data-v-faa80d68>OK</button></label> <div class="footer" style="display:none;" data-v-faa80d68 data-v-faa80d68><span data-v-faa80d68><i class="iconfont reco-theme" data-v-faa80d68></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-faa80d68>vuePress-theme-reco</a></span> <span data-v-faa80d68><i class="iconfont reco-copyright" data-v-faa80d68></i> <a data-v-faa80d68><span data-v-faa80d68>somenzz</span>
+            
+          <span data-v-faa80d68>2018 - </span>
+          2021
+        </a></span></div></div> <div data-v-ed7af0ae><main class="page"><!----> <!----> <!----> <!----> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><!----></div></div>
+    <script src="/assets/js/app.73332f3e.js" defer></script><script src="/assets/js/3.86c9f58d.js" defer></script><script src="/assets/js/1.b9cce472.js" defer></script><script src="/assets/js/11.2681c4c5.js" defer></script>
+  </body>
+</html>
